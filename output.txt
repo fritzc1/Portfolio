@@ -1,0 +1,50 @@
+sequence s
+   length = 10
+   current element = 10.0
+   elements:   1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0
+
+sequence t after clone from s
+   length = 10
+   current element = 10.0
+   elements:   1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0
+
+sequence t after addAfter
+   length = 14
+   current element = 12.0
+   elements:   1.0  2.0  3.0  4.0  5.0 11.0 12.0  6.0  7.0  8.0  9.0 10.0 -1.0 -2.0
+
+sequence u after clone from t
+   length = 14
+   current element = 12.0
+   elements:   1.0  2.0  3.0  4.0  5.0 11.0 12.0  6.0  7.0  8.0  9.0 10.0 -1.0 -2.0
+
+sequence u after removeCurrent
+   length = 12
+   current element =  6.0
+   elements:   1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0 -1.0 -2.0
+
+sequence v after clone from s
+   length = 10
+   current element = 10.0
+   elements:   1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0
+
+sequence v after addBefore
+   length = 14
+   current element = 12.0
+   elements:  -2.0 -1.0  1.0  2.0  3.0  4.0 12.0 11.0  5.0  6.0  7.0  8.0  9.0 10.0
+
+sequence v after addAll(s)
+   length = 24
+   current element = 12.0
+   elements:  -2.0 -1.0  1.0  2.0  3.0  4.0 12.0 11.0  5.0  6.0  7.0  8.0  9.0 10.0  1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0
+
+sequence w = s + t
+   length = 24
+   there is no current element
+   elements:   1.0  2.0  3.0  4.0  5.0  6.0  7.0  8.0  9.0 10.0  1.0  2.0  3.0  4.0  5.0 11.0 12.0  6.0  7.0  8.0  9.0 10.0 -1.0 -2.0
+
+sequence x
+   length = 0
+   there is no current element
+   elements: 
+
